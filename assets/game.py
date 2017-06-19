@@ -13,10 +13,23 @@ IS_WINDOWS = os.name == "nt"
 IS_MAC = sys.platform == "darwin"
 INTERACTIVE_MODE = not len(sys.argv) > 1  # CLI flags = non-interactive
 
+usr_input = input("> ")
+     while (usr_input != 'fish') and (usr_input != 'Exit'):
+     usr_input = input("> ")
+     if usr_input == 'fish':
+        
+
 def shop():
      print("Shop\n"
-           "-----------------------------\n")
-
+           "-----------------------------\n"
+           "Fish\n"
+           "$10\n")
+     if usr_input == 'fish':
+        print('Item "Fish" was bought')
+        wait()
+        shop()
+     if usr_input == 'Exit':
+        game()
 def game():
      clear_screen()
      print(""
