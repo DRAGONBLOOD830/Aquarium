@@ -9,4 +9,7 @@ try:
 def menu():
      print("-=-=-=-=-=-=-=-=-=-=\n"
            "     Aquarium\n"
+           "An awesome !!FISH!! game"
+           
            "-=-=-=-=-=-=-=-=-=-=\n")
+     
