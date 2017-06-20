@@ -3,6 +3,7 @@ import sys
 import random
 import time
 from data import menudata
+fish1 = False
 def clear_screen():
     if IS_WINDOWS:
         os.system("cls")
@@ -16,8 +17,6 @@ INTERACTIVE_MODE = not len(sys.argv) > 1  # CLI flags = non-interactive
 usr_input = input("> ")
      while (usr_input != 'fish') and (usr_input != 'Exit'):
      usr_input = input("> ")
-     if usr_input == 'fish':
-        
 
 def shop():
      print("Shop\n"
@@ -26,6 +25,7 @@ def shop():
            "$10\n")
      if usr_input == 'fish':
         print('Item "Fish" was bought')
+        fish1 = True
         wait()
         shop()
      if usr_input == 'Exit':
@@ -36,7 +36,7 @@ def game():
            "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
            "                                                       \n"
            "                                                       \n"
-           "                                                       \n"
+           "         {}                                            \n"
            "                                                       \n"
            "                                                       \n"
            "                                                       \n"
@@ -50,7 +50,7 @@ def game():
            "                                                       \n"
            "-------------------------------------------------------\n"
            " Shop     |  Exit    |                                 \n"
-           "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+           "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=".format(if fish1 = True print("<(--)")))
      usr_input = input("> ")
      while (usr_input != 'Shop' and 'shop') and (usr_input != 'Exit' and 'exit') and (usr_input != '0'):
          usr_input = input("> ")
