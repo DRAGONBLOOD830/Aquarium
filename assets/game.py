@@ -19,6 +19,9 @@ while (usr_input != 'fish') and (usr_input != 'Exit'):
     usr_input = input("> ")
 
 def shop():
+    usr_input = input("> ")
+    while (usr_input != 'fish') and (usr_input != 'Exit'):
+        usr_input = input("> ")
      print("Shop\n"
            "-----------------------------\n"
            "Fish\n"
@@ -31,9 +34,9 @@ def shop():
      if usr_input == 'Exit':
         game()
 def game():
-    if fishone = True:
+    if fishone is True:
         gameone()
-    if fishone = False:
+    if fishone is False:
         clear_screen()
         print(""
               "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
@@ -54,17 +57,17 @@ def game():
               "-------------------------------------------------------\n"
               " Shop     |  Exit    |                                 \n"
               "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
-     usr_input = input("> ")
-     while (usr_input != 'Shop' and 'shop') and (usr_input != 'Exit' and 'exit') and (usr_input != '0'):
-         usr_input = input("> ")
-     if usr_input == 'Shop' and 'shop':
-         shop()
-     if usr_input == 'Exit' and 'exit':
-         print("Exiting...")
-         time.sleep(1)
-         clear_screen()
-         print(random.choice(menudata.exit))
-         sys.exit(1)
+        usr_input = input("> ")
+        while (usr_input != 'Shop' and 'shop') and (usr_input != 'Exit' and 'exit') and (usr_input != '0'):
+            usr_input = input("> ")
+        if usr_input == 'Shop' and 'shop':
+             shop()
+        if usr_input == 'Exit' and 'exit':
+            print("Exiting...")
+            time.sleep(1)
+            clear_screen()
+            print(random.choice(menudata.exit))
+            sys.exit(1)
      
             
 def gameone():
@@ -89,14 +92,14 @@ def gameone():
               "-------------------------------------------------------\n"
               " Shop     |  Exit    |                                 \n"
               "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
-     usr_input = input("> ")
-     while (usr_input != 'Shop' and 'shop') and (usr_input != 'Exit' and 'exit') and (usr_input != '0'):
-         usr_input = input("> ")
-     if usr_input == 'Shop' and 'shop':
-         shop()
-     if usr_input == 'Exit' and 'exit':
-         print("Exiting...")
-         time.sleep(1)
-         clear_screen()
-         print(random.choice(menudata.exit))
-         sys.exit(1)
+        usr_input = input("> ")
+        while (usr_input != 'Shop' and 'shop') and (usr_input != 'Exit' and 'exit') and (usr_input != '0'):
+            usr_input = input("> ")
+        if usr_input == 'Shop' and 'shop':
+            shop()
+        if usr_input == 'Exit' and 'exit':
+            print("Exiting...")
+            time.sleep(1)
+            clear_screen()
+            print(random.choice(menudata.exit))
+            sys.exit(1)
