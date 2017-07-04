@@ -1,3 +1,5 @@
+No Longer Maintained!
+New Location https://github.com/Articuno1234/Aquarium
 # Info
 Make sure to join our discord [here!](https://discord.gg/sySqbqY)
 # Aquarium
